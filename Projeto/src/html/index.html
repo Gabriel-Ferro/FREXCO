@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel ="stylessheet" href="src/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
+</head>
+<body>
+    <div class="produtos">
+        <div class="produtos-item">
+            <a href="">
+                <div class="produtos-item-img">
+                    <img src="" />
+                </div>
+                <div class ="prodrutos-item-add"></div>
+            </a>
+            <div class="produtos-item-preco"></div>
+            <div class="produtos-item-nome"></div>
+            <div class="produtos-item-desc"></div>    
+        </div>
+        <div class="carr-item">
+            <img src="" />
+            <div class="carr-item-qtd">
+                <button class="carr-item-qtdme">-</button>
+                <div class="carr-item-qt">1</div>
+                <button class="carr-item-qtma">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu-aberto">
+            <span>0</span>
+            <span class="material-icons">shopping_cart</span>
+        </div>
+    </header>
+    <main> 
+        <h1>Produtos</h1>
+        <div class="produtos-local"></div>
+    </main>
+    <aside>
+        <div class="carr-localvalor">
+            <div class="menu-fechado">
+                <span class="material-icons">close</span>
+            </div>
+            <h1>Seus Produtos</h1>
+            <div class="carr"></div>
+            <div class="carr-detalhes">
+                <div class="carr-total totalsub">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="carr-total desc">
+                    <span>Desconto </span>
+                    <span>R$ --</span>
+                </div>
+                <div class="carr--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <div class="produtosJanelaLocal">
+        <div class="produtosJanelaCorpo">
+            <div class="produtosInfo-cancelMobileButton">Voltar</div>
+            <div class="produtosBig">
+                <img src="" />
+            </div>
+            <div class="produtosInfo">
+                <h1>--</h1>
+                <div class="produtosInfo-descr">--</div>
+                <div class="produtosInfo-sizelocal">
+                    <div class="produtosInfo-setor">Escala</div>
+                    <div class="produtosInfo-sizes">
+                        <div data-key="0" class="produtosInfo-size>">1/72<span>--</span>
+                        </div>
+                        <div data-key="1" class="produtosInfo-size>">1/48<span>--</span>
+                        </div>
+                        <div data-key="2" class="produtosInfo-size selected>">1/32<span>--</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtosInfo-precolocal">
+                    <div class="produtosInfo-setor">Preço</div>
+                    <div class="produtosInfo-preco"></div>
+                        <div class="produtosInfo-atualPreco">R$ --</div>
+                        <div class="produtosInfo-qtlocal">
+                            <button class="produtosInfo-qtme">-</button>
+                            <div class="produtosInfo-qt">1</div>
+                            <button class="produtosInfo-qtma">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtosInfo-addbutton">Adicionar ao Carrinho</div>
+                <div class="produtosInfo-cancelbutton">Cancelar</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="src/js/produtos.js"></script>
+        <script type="text/javascript" src="src/js/script.js"></script>
+    </div>
+</body>
+</html>
