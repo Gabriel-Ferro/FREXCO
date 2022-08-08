@@ -1,35 +1,21 @@
-import React, {useEffect, useState} from 'react'
-import './App.css';
-import axios from "axios"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./pages/Cart";
+import Home from "./pages/Home";
 
-function App() {
-  useEffect (() => {
-    axios.get("https://www.fruityvice.com/api/fruit/all")
-    .then (() =>{
-        console.log("Deu tudo certo")
-    }).catch(() =>{
-        console.log("Deu tudo ERRADO")
-    })
-  }, [])
+import CartProvider from "./context/cart";
+import ThemeProvider from "./context/theme";
 
-	return(
-		<div className="app">
-
-			<div className="cards">
-
-				<div className="card" >
-					<div className="card-body" >
-						<h1>Título do meu post</h1>
-						<div className="line"></div>
-						<h2>Conteudo da minha postagem, conteúdo da minha postagem</h2>
-					</div>
-				</div>
-			
-			</div>
-
-		</div>
-	)
-
+export default function App() {
+  return (
+    <ThemeProvider>
+      <CartProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </BrowserRouter>
+      </CartProvider>
+    </ThemeProvider>
+  );
 }
-
-export default App;
