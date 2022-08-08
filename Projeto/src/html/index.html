@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de compras</title>
-    <link rel ="stylessheet" href="projeto/src/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="../css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/> 
 </head>
 <body>
     <div class="produtos">
@@ -14,15 +15,16 @@
                 <div class="produtos-item-img">
                     <img src="" />
                 </div>
-                <div class ="prodrutos-item-add"></div>
+                <div class ="prodrutos-item-add">+</div>
             </a>
-            <div class="produtos-item-preco"></div>
-            <div class="produtos-item-nome"></div>
-            <div class="produtos-item-desc"></div>    
+            <div class="produtos-item-preco">R$ --</div>
+            <div class="produtos-item-nome">--</div>
+            <div class="produtos-item-desc">--</div>    
         </div>
         <div class="carr-item">
             <img src="" />
-            <div class="carr-item-qtd">
+            <div class="carr-item-nome">--</div>
+            <div class="carr-item-qtlocal">
                 <button class="carr-item-qtdme">-</button>
                 <div class="carr-item-qt">1</div>
                 <button class="carr-item-qtma">+</button>
@@ -40,22 +42,22 @@
         <div class="produtos-local"></div>
     </main>
     <aside>
-        <div class="carr-localvalor">
+        <div class="carr-local">
             <div class="menu-fechado">
                 <span class="material-icons">close</span>
             </div>
             <h1>Seus Produtos</h1>
             <div class="carr"></div>
             <div class="carr-detalhes">
-                <div class="carr-total totalsub">
+                <div class="carr-totalvalor totalsub">
                     <span>Subtotal</span>
                     <span>R$ --</span>
                 </div>
                 <div class="carr-total desc">
-                    <span>Desconto </span>
+                    <span>Desconto (-10%)</span>
                     <span>R$ --</span>
                 </div>
-                <div class="carr--finalizar">Finalizar a compra</div>
+                <div class="carr-finalizar">Finalizar a compra</div>
             </div>
         </div>
     </aside>
@@ -71,18 +73,18 @@
                 <div class="produtosInfo-sizelocal">
                     <div class="produtosInfo-setor">Escala</div>
                     <div class="produtosInfo-sizes">
-                        <div data-key="0" class="produtosInfo-size>">1/72<span>--</span>
+                        <div data-key="0" class="produtosInfo-size>">Pequeno<span>--</span>
                         </div>
-                        <div data-key="1" class="produtosInfo-size>">1/48<span>--</span>
+                        <div data-key="1" class="produtosInfo-size>">Médio<span>--</span>
                         </div>
-                        <div data-key="2" class="produtosInfo-size selected>">1/32<span>--</span>
+                        <div data-key="2" class="produtosInfo-size selected>">Grande<span>--</span>
                         </div>
                     </div>
                 </div>
                 <div class="produtosInfo-precolocal">
                     <div class="produtosInfo-setor">Preço</div>
                     <div class="produtosInfo-preco"></div>
-                        <div class="produtosInfo-atualPreco">R$ --</div>
+                        <div class="produtosInfo-atualpreco">R$ --</div>
                         <div class="produtosInfo-qtlocal">
                             <button class="produtosInfo-qtme">-</button>
                             <div class="produtosInfo-qt">1</div>
@@ -90,12 +92,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="produtosInfo-addbutton">Adicionar ao Carrinho</div>
-                <div class="produtosInfo-cancelbutton">Cancelar</div>
+                <div class="produtosInfo-addButton">Adicionar ao Carrinho</div>
+                <div class="produtosInfo-cancelButton">Cancelar</div>
             </div>
         </div>
-        <script type="text/javascript" src="projeto/src/js/produtos.js"></script>
-        <script type="text/javascript" src="projeto/src/js/script.js"></script>
+        <script type="text/javascript" src="../js/produtos.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
     </div>
 </body>
 </html>
