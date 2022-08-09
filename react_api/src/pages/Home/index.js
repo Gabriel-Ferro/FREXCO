@@ -22,7 +22,10 @@ export default function Home() {
         <div className="cart" key={product.id}>
           <div className="container">
             <h2>{product.name}</h2>
-            <h3>R${product.price},00</h3>
+            <h4>{product.genus}</h4>
+            <h4>{product.family}</h4>
+            <h4>{product.order}</h4>
+            <h4>{product.description}</h4>
             <h3>
               {productsCart.find((item) => item.id === product.id)?.qtd
                 ? productsCart.find((item) => item.id === product.id)?.qtd
