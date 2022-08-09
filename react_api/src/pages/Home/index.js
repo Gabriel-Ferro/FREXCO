@@ -16,7 +16,8 @@ export default function Home() {
 
   return (
     <div>
-      <button onClick={clearCart}>Limpar Carrinho</button>
+      <h1>Listas de Alimentos</h1>
+      <Link to="/cart">Ver carrinho</Link>
       <p>{JSON.stringify(productsCart)}</p>
       {products.map((product) => (
         <div className="cart" key={product.id}>
@@ -31,13 +32,11 @@ export default function Home() {
                 ? productsCart.find((item) => item.id === product.id)?.qtd
                 : 0}
             </h3>
-            <button onClick={() => addProducToCart(product.id)}>+</button>
-            <button onClick={() => removeProductToCart(product.id)}>-</button>
+            <button onClick={() => addProducToCart(product.id)}>Adicionar ao Carrinho</button>
           </div>
           <img src={product.image} />
         </div>
       ))}
-      <Link to="/cart">Ver carrinho</Link>
     </div>
   );
 }
